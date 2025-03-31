@@ -16,6 +16,6 @@ print(calculo)
 s.send(str.encode(calculo))  # send some data
 data = s.recv(1024)     # receive the response
 
-print (bytes.decode(data))            # print the result
+print ("Result = " + bytes.decode(data))            # print the result
 
 s.close()               # close the connection
